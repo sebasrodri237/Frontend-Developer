@@ -89,3 +89,44 @@ body{
 
     color: #ffffff;
 }
+.carousel{
+
+    width: 100%;
+    overflow: scroll;/*Propiedad para generar*/
+    padding: 30px;
+    position: relative;/*Todos los elementos dentro de esta clase
+    se posicionaran en relacion a este*/
+}
+.carousel__container{
+
+    white-space: nowrap;/*Permite que los elementos sigan fuera del
+    tamaño de la pantalla*/
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carousel__item{
+
+    background-color: blue;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+.carousel__item:hover ~ .carousel__item{
+
+    transform: translate3d(100px, 0 ,0);/*Animación no explicada*/
+}
+.carousel__container:hover .carousel__item{
+
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel__item:hover{
+
+    transform: scale(1.5);/*Animación escala imagen*/
+    opacity: 1;
+}
