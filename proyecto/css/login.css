@@ -17,3 +17,56 @@ body{
     width: 200px;
     margin: 10px 0px 0px 10px;
 }
+.login{
+
+    background: linear-gradient(#c7372d, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    min-height: calc(100vh) - 200px;
+}
+.login__container{
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+}
+.login__container--form{
+
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label{
+
+    font-size: 14px;
+}
+.login__container--remember-me{
+
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.login__container--remember-me a{
+
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover{
+
+    text-decoration: underline;
+}
+.login__container--social-media > div{/*Significa que aplique
+    el estilos a todo lo encontrado con ese nombre, en este caso
+    todos los div*/
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
