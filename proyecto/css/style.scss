@@ -1,3 +1,6 @@
+$white: #ffffff;
+$red:red;
+
 body{
 
     margin: 0;
@@ -41,7 +44,7 @@ body{
 }
 .header__menu li a{
 
-    color: #ffffff;
+    color: $white;
     text-decoration: none;
 }
 .header__menu li a:hover{
@@ -61,7 +64,7 @@ body{
 .header__menu--profile p{
 
     margin: 0;
-    color: #ffffff;
+    color: $white;
 }
 .main{
 
@@ -74,12 +77,12 @@ body{
 }
 .main__title{
 
-    color: #ffffff;
+    color: $white;
     font-size: 25px;
 }
 .categories__title{
 
-    color: #ffffff;
+    color: $white;
     font-size: 16px;
     padding-left: 30px;
     width: 100%;
@@ -87,9 +90,9 @@ body{
 .input{
 
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #ffffff;
+    border: 2px solid $white;
     border-radius: 30px;
-    color: #ffffff;
+    color: $white;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     height: 50px;
@@ -98,7 +101,7 @@ body{
 }
 ::placeholder{
 
-    color: #ffffff;
+    color: $white;
 }
 .carousel{
 
@@ -173,7 +176,7 @@ body{
 }
 .footer a{
 
-    color: #ffffff;
+    color: $white;
     cursor: pointer;
     font-size: 14px;
     padding-left: 30px;
