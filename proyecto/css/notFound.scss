@@ -1,15 +1,24 @@
+$white: #ffffff;
+$screenFull: 100%;
+$fontFamily: 'Muli', sans-serif;
+$backColorOne: #c7372d;
+$backColorTwo: #AB88FF;
+@mixin flex {
+    
+    display: flex;
+    align-items: center;
+}
 body{
 
     margin: 0;
-    background: linear-gradient(#c7372d, #AB88FF);
-    font-family: 'Muli', sans-serif;
+    background: linear-gradient($backColorOne, $backColorTwo);
+    font-family: $fontFamily;
 }
 .header{
 
-    display: flex;
+    @include flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    width: $screenFull;
     height: 80px;
 }
 .header__img{
@@ -19,8 +28,7 @@ body{
 }
 .error{
 
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     flex-direction: column;
     height: 600px;
@@ -28,7 +36,7 @@ body{
 }
 .error__title{
 
-    color: #ffffff;
+    color: $white;
     font-size: 100px;
     margin: 30px 0px;
 }
@@ -54,20 +62,19 @@ body{
  }  
 .error__message{
 
-    color: #ffffff;
+    color: $white;
     font-size: 20px;
     margin: 0px;
 }
 .footer{
 
-    display: flex;
-    align-items: center;
+    @include flex;
     height: 110px;
-    width: 100%;
+    width: $screenFull;
 }
 .footer a{
 
-    color: #ffffff;
+    color: $white;
     cursor: pointer;
     font-size: 14px;
     padding-left: 30px;

@@ -5,8 +5,8 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: #c7372d;
   width: 100%;
   height: 80px;
@@ -85,9 +85,9 @@ body {
 }
 
 .footer {
-  background-color: #AB88FF;
   display: flex;
   align-items: center;
+  background-color: #AB88FF;
   height: 100px;
   width: 100%;
 }
