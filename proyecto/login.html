@@ -10,18 +10,18 @@
 </head>
 <body>
     <header class="header">
-        <img src="images/logo-platzi-video-BW2.png" alt="" class="header__img">
+        <img tabindex="0" src="images/logo-platzi-video-BW2.png" alt="" class="header__img">
     </header>
     <section class="login"> <!-- Puedo colocar seccion o div, esto sera a eleccion -->
         <div class="login__container">
-            <h2>Inicia Sesión</h2>
+            <h2 tabindex="0">Inicia Sesión</h2>
             <form action="" class="login__container--form">
-                <input type="text" class="input" placeholder="Correo">
-                <input type="password" class="input" placeholder="Contraseña">
+                <input aria-label="Correo" type="text" class="input" placeholder="Correo">
+                <input aria-label="Contraseña" type="password" class="input" placeholder="Contraseña">
                 <button class="button">Iniciar sesión</button>
                 <div class="login__container--remember-me">
                     <label>
-                        <input type="checkbox" id="cbox1" value="checkbox">Recuérdame
+                        <input aria-label="Checkbox" type="checkbox" id="cbox1" value="checkbox">Recuérdame
                     </label>
                     <a href="#">Olvidé mi contraseña</a>
                 </div>
